@@ -16,10 +16,9 @@ bool isVowel(char x)
     return false;
 }
 
-void countVowels(string st)
+int countVowel(string st)
 {
     int count = 0;
-
     for (int i = 0; i < st.size(); i++)
     {
         if (isVowel(st[i]))
@@ -28,7 +27,7 @@ void countVowels(string st)
         }
     }
 
-    cout << "The number of vowels in the given string are " << count << endl;
+    return count;
 }
 
 int main()
@@ -37,7 +36,7 @@ int main()
     cout << "Enter the string to count vowels : ";
     getline(cin, st);
 
-    countVowels(st);
+    cout << "The number of vowels in the string are " << countVowel(st) << endl;
 
     return 0;
 }

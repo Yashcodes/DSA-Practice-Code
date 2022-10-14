@@ -3,11 +3,10 @@ using namespace std;
 
 int countWords(string st)
 {
-    int n = st.size();
     string word = "";
     int count = 0;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < st.size(); i++)
     {
         if (st[i] == ' ')
         {
@@ -19,10 +18,9 @@ int countWords(string st)
         }
         else
         {
-            word = word + st[i];
+            word += st[i];
         }
     }
-
     if (word.size() > 0)
     {
         word = "";

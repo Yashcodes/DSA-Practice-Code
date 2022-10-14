@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string reverseWord(string st)
+string reverse(string st)
 {
     int start = 0;
     int end = st.size() - 1;
@@ -16,7 +16,7 @@ string reverseWord(string st)
     return st;
 }
 
-void reverseStringWords(string st)
+void reverseString(string st)
 {
     string ans = "";
     string word = "";
@@ -27,7 +27,7 @@ void reverseStringWords(string st)
         {
             if (word.size() > 0)
             {
-                ans += reverseWord(word);
+                ans += reverse(word);
                 ans += ' ';
                 word = "";
             }
@@ -39,17 +39,19 @@ void reverseStringWords(string st)
     }
     if (word.size() > 0)
     {
-        ans += reverseWord(word);
+        ans += reverse(word);
     }
+
     cout << ans;
 }
 
 int main()
 {
     string st;
-    cout << "Enter the string to reverse individual words : ";
+    cout << "Enter the string to reverse with words : ";
     getline(cin, st);
 
-    reverseStringWords(st);
+    string str = reverse(st);
+    reverseString(str);
     return 0;
 }
