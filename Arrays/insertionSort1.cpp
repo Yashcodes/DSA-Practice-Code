@@ -32,20 +32,20 @@ int main()
     cout << "Enter the size of the array : ";
     cin >> n;
 
-    int arr[n];
+    // int arr[n];
     cout << "Enter the elements for the array : ";
-    for (int i = 0; i < n; i++)
-    {
-        cin >> arr[i];
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     // cin >> arr[i];
+    // }
 
     // Calling the sorting function
-    insertionSort(arr, n);
+    // insertionSort(arr, n);
 
     cout << "The sorted array is : ";
 
     // Calling the print function
-    printArray(arr, n);
+    // printArray(arr, n);
 
     return 0;
 }
